@@ -21,12 +21,12 @@ lib/
 
 ## 3. App Screenshots
 
-[View Screenshots](https://github.com/username/project-name/tree/main/screenshots)
+[View Screenshots](https://github.com/mrubaz/test_task/screenshots)
 
 ## 4. App Video
 
-[Watch App Demo Video](https://drive.google.com/file/d/xxxx/view)
+[Watch App Demo Video](https://drive.google.com/file/d/1guHhtsR1XuEDLJyG9N3AA2-4Y-SrmwDz/view?usp=sharing)
 
 ## 5. App APK
 
-[Download APK](https://github.com/username/project-name/releases/download/v1.0/app-release.apk)
+[Download APK](https://github.com/mrubaz/test_task/releases/download/v1.0/app-release.apk)
