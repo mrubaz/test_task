@@ -21,7 +21,7 @@ lib/
 
 ## 3. App Screenshots
 
-[View Screenshots](https://github.com/mrubaz/test_task/screenshots)
+[View Screenshots](https://github.com/mrubaz/test_task/tree/main/screenshots)
 
 ## 4. App Video
 
