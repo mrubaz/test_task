@@ -33,12 +33,7 @@ class HomeView extends StatelessWidget {
                 children: [
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: Image.asset(
-                      AppAssets.notificationIcon,
-                      width: 24,
-                      height: 24,
-                      color: AppColors.textMain,
-                    ),
+                    child: Image.asset(AppAssets.notificationIcon, width: 24, height: 24, color: AppColors.textMain),
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.min,
@@ -47,23 +42,11 @@ class HomeView extends StatelessWidget {
                         AppAssets.weekIcon,
                         width: 18,
                         height: 18,
-                        colorFilter: const ColorFilter.mode(
-                          AppColors.textMain,
-                          BlendMode.srcIn,
-                        ),
+                        colorFilter: const ColorFilter.mode(AppColors.textMain, BlendMode.srcIn),
                       ),
                       8.w,
-                      Text(
-                        'Week 1/4',
-                        style: AppFonts.body.copyWith(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14,
-                        ),
-                      ),
-                      const Icon(
-                        Icons.arrow_drop_down,
-                        color: AppColors.textMain,
-                      ),
+                      Text('Week 1/4', style: AppFonts.body.copyWith(fontWeight: FontWeight.bold, fontSize: 14)),
+                      const Icon(Icons.arrow_drop_down, color: AppColors.textMain),
                     ],
                   ),
                 ],
@@ -71,15 +54,9 @@ class HomeView extends StatelessWidget {
               24.h,
               GestureDetector(
                 onTap: () {
-                  Get.bottomSheet(
-                    const CalendarBottomSheet(),
-                    isScrollControlled: true,
-                  );
+                  Get.bottomSheet(const CalendarBottomSheet(), isScrollControlled: true);
                 },
-                child: Text(
-                  'Today, 22 Dec 2024',
-                  style: AppFonts.heading.copyWith(fontSize: 16),
-                ),
+                child: Text('Today, 22 Dec 2024', style: AppFonts.heading.copyWith(fontSize: 16)),
               ),
               16.h,
 
@@ -88,10 +65,7 @@ class HomeView extends StatelessWidget {
                   selectedDate: controller.selectedDate.value,
                   onDateSelected: (date) {
                     controller.selectDate(date);
-                    Get.bottomSheet(
-                      const CalendarBottomSheet(),
-                      isScrollControlled: true,
-                    );
+                    Get.bottomSheet(const CalendarBottomSheet(), isScrollControlled: true);
                   },
                 ),
               ),
@@ -101,10 +75,7 @@ class HomeView extends StatelessWidget {
                 child: Container(
                   width: 40,
                   height: 4,
-                  decoration: BoxDecoration(
-                    color: AppColors.surface,
-                    borderRadius: BorderRadius.circular(2),
-                  ),
+                  decoration: BoxDecoration(color: AppColors.surface, borderRadius: BorderRadius.circular(2)),
                 ),
               ),
               24.h,
@@ -112,51 +83,27 @@ class HomeView extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    'Workouts',
-                    style: AppFonts.heading.copyWith(
-                      fontSize: 24,
-                      fontWeight: .w600,
-                    ),
-                  ),
+                  Text('Workouts', style: AppFonts.heading.copyWith(fontSize: 24, fontWeight: .w600)),
                   Row(
                     children: [
                       SvgPicture.asset(
                         AppAssets.workoutsIcon,
                         width: 20,
                         height: 20,
-                        colorFilter: const ColorFilter.mode(
-                          AppColors.textMain,
-                          BlendMode.srcIn,
-                        ),
+                        colorFilter: const ColorFilter.mode(AppColors.textMain, BlendMode.srcIn),
                       ),
                       6.w,
-                      Text(
-                        '9°',
-                        style: AppFonts.heading.copyWith(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
+                      Text('9°', style: AppFonts.heading.copyWith(fontSize: 24, fontWeight: FontWeight.w500)),
                     ],
                   ),
                 ],
               ),
               16.h,
 
-              const WorkoutCard(
-                dateAndDuration: 'December 22 - 25m - 30m',
-                title: 'Upper Body',
-              ),
+              const WorkoutCard(dateAndDuration: 'December 22 - 25m - 30m', title: 'Upper Body'),
 
               24.h,
-              Text(
-                'My Insights',
-                style: AppFonts.heading.copyWith(
-                  fontSize: 24,
-                  fontWeight: .w600,
-                ),
-              ),
+              Text('My Insights', style: AppFonts.heading.copyWith(fontSize: 24, fontWeight: .w600)),
               16.h,
 
               Obx(
